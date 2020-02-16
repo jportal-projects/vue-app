@@ -1,14 +1,34 @@
 {
   "name": "vue-app",
   "version": "0.1.0",
-  "private": true,
+  "description": "A vue app",
+  "files": [
+    "lib",
+    "src",
+    "packages",
+    "types"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jportal-projects/vue-app.git"
+  },
+  "homepage": "http://www.jportal.cn",
+  "keywords": [
+    "vue-app",
+    "vue"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jportal-projects/vue-app/issues"
+  },
   "dependencies": {
+    "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "element-ui": "^2.4.5",
     "vue": "^2.6.11",
@@ -29,6 +49,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.1.2",
+    "json-server": "^0.16.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "stylus": "^0.54.7",
