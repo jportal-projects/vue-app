@@ -1,15 +1,14 @@
 <template>
-	<app-admin path="/platform.app" outline="aside-outline"></app-admin>
+	<app-admin path="/platform.app" />
 </template>
 <script>
-import Vue from "vue";
-import Router from "../../packages/plugins/router";
+import AppAdmin from "../../packages/app/admin";
 import AsideOutline from "./outlines/AsideOutline";
-Vue.component("aside-outline", AsideOutline);
+const components = {
+	"app-admin": AppAdmin,
+	"aside-outline": AsideOutline
+};
 export default {
-	router: new Router(),
-	data() {
-		return {};
-	}
+	components
 };
 </script>

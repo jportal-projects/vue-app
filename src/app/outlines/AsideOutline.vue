@@ -1,5 +1,5 @@
 <template>
-	<div>ddddd</div>
+	<div>AsideOutline</div>
 </template>
 <script>
 export default {

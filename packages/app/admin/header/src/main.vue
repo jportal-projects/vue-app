@@ -1,8 +1,8 @@
 <template>
-	<div>app view</div>
+	<div>app admin header</div>
 </template>
 <script>
 export default {
-	name: "app-view"
+	name: "app-admin-header"
 };
 </script>

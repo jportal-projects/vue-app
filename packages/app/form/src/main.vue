@@ -3,6 +3,6 @@
 </template>
 <script>
 export default {
-	name: "AppForm"
+	name: "app-form"
 };
 </script>
