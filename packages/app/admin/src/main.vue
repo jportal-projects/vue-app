@@ -2,7 +2,7 @@
 	<div class="app-admin" v-loading.fullscreen.lock="loading">
 		<app-layout>
 			<app-sidebar>
-				<app-outline></app-outline>
+				<app-outline :items="this.outline"></app-outline>
 			</app-sidebar>
 		</app-layout>
 	</div>
@@ -39,7 +39,41 @@ const props = {
 
 const data = function() {
 	return {
-		loading: true
+		loading: true,
+		outline: [
+			{
+				id: "1",
+				icon: "el-icon-location",
+				title: "导航一",
+				name: "",
+				path: "",
+				disabled: false,
+				children: [
+					{
+						id: "1-1",
+						icon: "el-icon-location",
+						title: "导航一子导航",
+						name: "",
+						path: "",
+						disabled: false
+					}
+				]
+			},
+			{
+				id: "2",
+				icon: "el-icon-menu",
+				title: "导航一",
+				name: "",
+				path: "",
+				disabled: true
+			},
+			{
+				id: "3",
+				title: "导航三",
+				name: "",
+				path: ""
+			}
+		]
 	};
 };
 
